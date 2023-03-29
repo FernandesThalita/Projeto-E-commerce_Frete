@@ -1,5 +1,5 @@
 //fetch para obter informações da API do DÓLAR
-fetch(`https://economia.awesomeapi.com.br/json/last/USD-BRL`)
+fetch(`http://economia.awesomeapi.com.br/json/last/USD-BRL`)
   .then((response) => response.json())
   .then((data) => precoProduto(data.USDBRL.bid));
 
