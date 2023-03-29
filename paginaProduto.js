@@ -1,5 +1,5 @@
 ///Fetch que obtem informações do arquivo json, do produto
-fetch(`http://economia.awesomeapi.com.br/json/last/USD-BRL`)
+fetch(`https://economia.awesomeapi.com.br/json/last/USD-BRL`)
   .then((response) => response.json())
   .then((data) => infoDeProdutos(data.USDBRL.bid));
 
