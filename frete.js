@@ -20,7 +20,7 @@ const preencherFormulario = (endereco) => {
 const pesquisarCep = async () => {
   const cep = document.getElementById("cep").value;
   //const que recebe a  URL da API ViaCep, e procura pelo CEP digitado
-  const url = `http://viacep.com.br/ws/${cep}/json/`;
+  const url = `https://viacep.com.br/ws/${cep}/json/`;
 
   //se CEP for válido, os dados da API são convertidos para JSON objeto, e a função de preencher é chamada
   if (cepValido(cep)) {
